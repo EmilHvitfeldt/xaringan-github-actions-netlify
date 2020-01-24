@@ -2,6 +2,6 @@ Package: xaringan-github-actions-netlify
 Type: Book
 Title: Example of using Github Actions to deploy xaringan slides on Netlify
 Version: 0.0.1
-Imports: xaringan
+Imports: crayon
 URL: https://github.com/EmilHvitfeldt/xaringan-github-actions-netlify
 BugReports: https://github.com/EmilHvitfeldt/xaringan-github-actions-netlify/issues
