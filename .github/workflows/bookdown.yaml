@@ -30,8 +30,9 @@ jobs:
           R -e 'renv::restore()'
 
       - name: Build site
-        run: Rscript -e 'dir.create("test")'
-        run: Rscript -e 'rmarkdown::render("index.Rmd", quiet = TRUE, output_file = "test/index.html")'
+        run: |
+          R -e 'dir.create("test")'
+          R -e 'rmarkdown::render("index.Rmd", quiet = TRUE, output_file = "test/index.html")'
 
       - name: Install npm
         uses: actions/setup-node@v1
